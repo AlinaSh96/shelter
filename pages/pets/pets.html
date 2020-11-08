@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelter</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header ">
+    <div class="wrapper burger-wrap">
+      <div class="header__container">
+          <a href="../main/index.html" class="logo" >
+          <div class="logo__title">
+            <h1 href="../main/index.html">Cozy House</h1>
+          </div>
+          <div class="logo__subtitle" >
+            Shelter for pets in Boston
+          </div>
+          </a>
+        <!-- </div> -->
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link " href="../main/index.html">About the
+                shelter</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link_active" href="#">Our pets</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link_disabled" href="#">Help the
+                shelter</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link  nav__link_disabled" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="pets">
+      <div class="overlay_burger"></div>
+      <div class="wrapper_">
+        <div class="pets__wrapper">
+        <h3 class="pets__title">
+          <span>Our friends who</span>
+          <span>are looking for a house</span>
+        </h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper  pets__cards"  id="pets">
+          </div>
+        </div>
+        <div class="pets__pagination">
+          <button class="pets__button disabled"  id ="first"> 
+            <<
+         </button> 
+          <button  class="pets__button swiper-button-prev" > 
+          </button > 
+      
+          <div class="pets__button number-btn ">
+            1
+          </div>
+      
+           <button  class="pets__button swiper-button-next">
+          </button > 
+      
+          <button  class="pets__button" id ="last"> 
+            >>
+         </button >
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+</main>
+<div class="footer">
+  <div class="wrapper">
+    <div class="footer__wrapper">
+      
+      <!-- <div class="footer__content"> -->
+        <div class="footer__item">
+        <div class="footer__title">
+          <span>
+            For questions 
+            and suggestions
+          </span>
+        </div>
+        <div class="footer__link">
+           <a href="mailto:email@shelter.com"><img class="footer__link-img" src="../../assets/mail.svg" alt=""></a>
+           <a href="mailto:email@shelter.com"> email@shelter.com</a>
+        </div>
+        <div class="footer__link">
+          <a href="tel: +13 674 75 54"> <img class="footer__link-img" src="../../assets/phone.svg" alt=""></a>
+          <a href="tel: +13 674 75 54">+13 674 567 75 54</a>
+        </div>
+      </div>
+
+
+      <div class="footer__item ">
+        <div class="footer__title">
+          <span>
+            We are waiting 
+            for your visit
+          </span>
+        </div>
+        <div class="footer__link footer__link-geo">
+           <a href="https://goo.gl/maps/jXBXV37jW1ZitZAKA"><img class="footer__link-img" src="../../assets/pin.png" alt=""></a>
+           <a href="https://goo.gl/maps/jXBXV37jW1ZitZAKA">1 Central Street, Boston
+             (entrance from the store)</a>
+        </div>
+        <div class="footer__link footer__link-geo">
+          <a href="https://goo.gl/maps/jXBXV37jW1ZitZAKA"><img class="footer__link-img" src="../../assets/pin.png" alt=""></a>
+          <a href="https://goo.gl/maps/jXBXV37jW1ZitZAKA">18 South Park, London </a>
+        </div>
+      </div>
+    <!-- </div> -->
+      <div class="footer__image-wrapper">
+        <img class="footer__image" src="../../assets/footer-puppy.png" alt="about-pets">
+      </div>
+    </div>
+  
+    </div>
+  </div>
+    <!--popup -->
+  <div id="overlay"></div>
+  <div  class="modal pets__popup" id="modal">
+    <div class="pets__popup__img">
+        <img src="" alt="" />
+    </div>
+    <div class="pets__popup__content">
+        <p class="pets__popup__name"></p>
+        <p class="pets__popup__type"></p>
+        <p class="pets__popup__description"></p>
+
+        <ul class="pets__popup__info">
+            <li><strong>Age:</strong> <span id="age"></span></li>
+            <li>
+                <strong>Inoculations:</strong>
+                <span id="inoculations"></span>
+            </li>
+            <li><strong>Diseases:</strong> <span id="diseases"></span></li>
+            <li>
+                <strong>Parasites:</strong> <span id="parasites"></span>
+            </li>
+        </ul>
+    </div>
+    <button class="pets__close " data-close-button>
+        <img src="../../assets/Vector.png" alt="Close icon" />
+    </button>
+</div>
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script src="./burger.js"></script>
+</html>
